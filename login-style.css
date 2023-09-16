@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;
+    */
+    align-items: center;
+    padding: 10px 0 10px 0;
+
+}
+
+FORM{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 30%;
+}
+
+H5{
+    color: rgb(80, 160, 200);
+}
+
+label{
+    font-weight: bolder;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 10px 0 0 0 ;
+    padding: 1%;
+}
+
+input{
+    padding: 2%;
+    margin: 0px;
+}
+
+.Sub-button{
+    color: #fff;
+    background-color: green;
+    padding: 2%;
+    margin-top: 20px;
+    border: none;
+    font-size: 16px;
+}
