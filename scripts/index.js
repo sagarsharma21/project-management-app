@@ -18,6 +18,7 @@ function signUpSubmit(firstName, lastName, email, password, mobile) {
     xhr.onreadystatechange = sendRequest;
 
 }
+
 function sendRequest(){
     console.log(xhr.readystate);
 }
