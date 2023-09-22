@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <meta name="viewport" content="width=device-width, initial-scale=1.0 " >
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+>>>>>>> b9be5f5 (Add authorization code)
     <title>Signup Page</title>
     
         <!-- /*h1{text-align: center;}
@@ -11,44 +15,47 @@
         #pwd{color: red;}
         .name{color: blue;}*/ -->
      
-    <link  rel="stylesheet" href="style.css"></link> 
+    <link  rel="stylesheet" href="index.css"></link> 
 </head>
-<body style="
+<body><!--  style="
         /* display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center; */
-    ">    
-    
-    <form style>
-        <h1 >Signup Page</h1>
-        <a href="login.html"><h6>Log in page</h6></a>
-    <label class="name">First name</label>
-    <input type="text" placeholder="eg., Mark">
-    
-    <label class="name">Last name</label>
-    <input type="text" placeholder="eg., Green">
-    
-    <label>Email</label>
-    <input type="email" placeholder="eg., test@upgrad.com">
-    
-    <label id="pwd">Password</label>
-    <input type="password" placeholder="eg., xxyyzz">
-    
-    <label id="tel">Mobile</label>
-    <input type="tel" placeholder="eg., 1234567890">
-    <button class="submitBtn">Submit</button>
-    </form>
+        font: optional;
+    ">     -->
+    <div class="container">
+        <form style>
+            <h1 >Signup Page</h1>
+            <a href="login.html"><h6>Log in page</h6></a>
+        <label class="text">First name</label>
+        <input type="text" placeholder="eg., Mark" id="firstName">
+        
+        <label class="name">Last name</label>
+        <input type="text" placeholder="eg., Green" id="lastName">
+        
+        <label>Email</label>
+        <input type="email" placeholder="eg., test@upgrad.com" id="email">
+        
+        <label id="pwd">Password</label>
+        <input type="password" placeholder="eg., xxyyzz" id="password">
+        
+        <label id="tel">Mobile</label>
+        <input type="tel" placeholder="eg., 1234567890" id="mobile">
+        
+        </form>
+        <button class="submitBtn" onclick="signUpSubmit(firstName,lastName,email,password,mobile);">Submit</button>
+    </div>
 
 <div style="display: none;">
     <form>
-    <input type="checkbox" id="s1">
+    <input type="checkbox" class="s1">
     <label for="s1">Groceries</label>
     
-    <input type="checkbox" id="s1">
+    <input type="checkbox" class="s1">
     <label for="s1">Utensils</label>
     
-    <input type="checkbox" id="s1">
+    <input type="checkbox" class="s1">
     <label for="s1">Groceries</label>
     
     </form>
@@ -78,6 +85,6 @@
 
 
 
-
+<script src="index.js"></script>
 </body>
 </html>

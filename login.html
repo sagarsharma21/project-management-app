@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="login-style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
+    <div class="container">
     <span><H1 style="display: inline;">Log in</H1>
     <A href="index.html" target="_self"><H5 style="display: inline;">or Sign up</H5></A></span>
 
@@ -16,9 +17,10 @@
 
         <label>Password</label>
         <input type="password" placeholder="e.g., ***********">
-        <button class="Sub-button" type="submit">Login</button>
+    
     </FORM>
-
+    <button class="login-btn" type="submit" onclick="login(email,password)">Login</button>
+    </div>
 
 </body>
 </html>
